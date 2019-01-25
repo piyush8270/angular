@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="rows">
+    <div class="col-sm-12">
+      <button class="btn btn-success"  routerLink="/addemployee">Sign Up</button>
+	   <div class="col-sm-11">
+	   <button class="btn btn-success"  routerLink="/usersignin">Sign in</button>
+    </div>
+    <div class="col-m-12">
+      <table class="table table-border">
+        <thead>
+          <tr>
+            <th *ngFor="let head of taskHeading">{{head.title}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let val of employeeData">
+            <td>{{val.firstName}}</td>
+            <td>{{val.lastName}}</td>
+            <td>{{val.userName}}</td>
+            <td>{{val.phoneNo}}</td>
+            <td>{{val.email}}</td>
+            <td>{{val.password}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
