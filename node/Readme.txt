@@ -1,0 +1,13 @@
+
+1)First Create the table by executing this table definition in mysql workbench
+
+CREATE TABLE Registration4(id int(6)  UNSIGNED AUTO_INCREMENT PRIMARY KEY,first_name VARCHAR(255) NOT NULL, 
+mobile varchar(15),email varchar(20),password varchar(50),
+lastname varchar(50),username varchar(50));
+
+2)After successfully creation of table use the db name in mysql connection (db name should changed to your db name in which this table has created)
+and run in node js command prompt as npm start.
+
+3) you can see the user data  by entering this url http://localhost:3000/users/list
+
+ 
